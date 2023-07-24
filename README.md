@@ -1,5 +1,7 @@
 # Frontend Mentor - Interactive rating component
 
+Live: https://aygun-interactive-rating-component.netlify.app/
+
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
