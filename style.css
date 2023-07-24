@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400&family=Kumbh+Sans:wght@300;400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.layout {
+  background-color: #141519;
+  width: 100wv;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.box-container {
+  background-color: #1e252f;
+  width: 350px;
+  max-height: 300px;
+  margin-top: 100px;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.new-svg{
+  display: flex;
+  justify-content: center;
+}
+
+.new-container {
+  margin: auto;
+}
+
+h3{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.new-container p {
+  color: #fc7615;
+  text-align: center;
+}
+
+.response {
+  opacity: 60%;
+  font-weight: 200;
+  color: white !important; 
+}
+
+
+.numbox span:hover{
+  color: white;
+  opacity: 100%;
+}
+
+.star,
+.numbox {
+  width: fit-content;  
+  position: relative;
+  display: inline-block;
+}
+
+.star::before {
+  left: -5px !important;
+
+}
+
+.star::before,
+.numbox::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -13px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(39, 47, 58);
+  border-radius: 50%;
+}
+
+.star svg {
+  margin: 2px 0 0 10px;
+}
+
+.star svg,
+.numbox span,
+#selectedText p {
+  position: relative;
+  z-index: 1;
+}
+
+h2{
+    margin-top: 40px;
+}
+
+.box-container p {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 25px 0 10px;
+  
+}
+
+.numbers span {
+  margin-left: 8px;
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.button-box{
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #fc7615;
+  width: 380px;
+  margin-top: 40px;
+  border: 1px solid #fc7615;
+  border-radius: 15px;
+  height: 40px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.numbox.active::before {
+  background-color: #fc7615;
+}
+
+.numbox.active span {
+  font-weight: 400;
+  color: white;
+  opacity: 100% !important;
+
+}
+
+#selectedText {
+  width: 250px;
+  margin: auto;
+  background: rgb(39, 47, 58);
+  border-radius: 20px;
+  border: 1px solid rgb(39, 47, 58);
+  margin-top: 20px;
+}
+
+#selectedText p{
+  padding: 6px;
+  z-index: 1111;
+  margin-top: 0 !important;
+  opacity: 90%;
+}
+
+.attribution {
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .box-container {
+    width: 200px;
+  }
+
+  #selectedText {
+    margin-left: -25px;
+  }
+
+  .numbox::before {
+    top: -4px;
+    left: -3px;
+    width: 30px;
+    height: 30px;
+  }
+}
